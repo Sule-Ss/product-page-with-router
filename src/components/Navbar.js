@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Navbar.module.css";
 import { Link, NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <Link to="/">Home</Link>
@@ -14,12 +14,19 @@ function Navbar() {
       >
         About
       </NavLink>
-      <Link to="/products" >Products</Link>
-
-      {/* <a href="/about">About</a>
+      <NavLink
+        to="/products"
+        className={({ isActive }) =>
+          isActive ? styles.activeStyle : undefined
+        }
+      >
+        Products
+      </NavLink>
+      {/* <a href="/">Home</a>
+      <a href="/about">About</a> 
       <a href="/products">Products</a> */}
     </div>
   );
-}
+};
 
 export default Navbar;
