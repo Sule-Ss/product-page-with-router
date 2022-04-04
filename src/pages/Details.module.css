@@ -8,11 +8,7 @@ background-color: #FCDEC0;
 
   border: 1px solid grey;
   border-radius: 3px;
-  /* border: 1px solid salmon; */
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
   margin: 0 20rem;
   font-size: large;
   background-color: #f6f0e0;
@@ -29,14 +25,12 @@ margin-bottom: 1rem;
   height: 10rem;
   margin: 2rem;
   box-shadow: 5px 10px 18px #c47a42;
-  /* padding: 1rem; */
 }
 
 .detailsNav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 1px solid salmon; */
   margin-top: 4rem;
   padding: 1rem;
 }
