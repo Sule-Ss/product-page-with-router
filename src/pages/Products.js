@@ -12,7 +12,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.productContainer}>
       <h2>Product Page</h2>
       <div className={styles.products}>
         {products.map((each) => (
@@ -21,7 +21,7 @@ const Products = () => {
             key={each.id}
             className={styles.product}
           >
-            <h6>{each.category}</h6>
+            <h4>{each.category}</h4>
             <p>{each.title}</p>
             <img style={{ width: "100px" }} src={each.image} alt="" />
           </Link>

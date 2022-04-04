@@ -16,7 +16,7 @@ const Details = () => {
   }, [params.productId]);
 
   return (
-    <div>
+    <div className={styles.detailsContainer}>
       <div className={styles.detailsNav}>
         <BackArrow
           className={styles.detailsNavIcon}
@@ -29,18 +29,22 @@ const Details = () => {
         />
       </div>
       <div className={styles.detailsWrapper}>
-        <p>{product?.id}</p>
-        <p>{product?.title}</p>
-        <p>{product?.description}</p>
-        <p>{product?.category}</p>
-        <p>{product?.price}</p>
-        <p>{product?.rating?.rate}</p>
-        <p>{product?.rating?.count}</p>
-        <img
-          className={styles.detailsImage}
-          src={product?.image}
-          alt={product?.title}
-        />
+        <div>
+          {/* <p>{product?.id}</p> */}
+          <h3>{product?.title}</h3>
+          <p>{product?.description}</p>
+          {/* <p>{product?.category}</p> */}
+          <h2>{product?.price} $</h2>
+          {/* <p>{product?.rating?.rate}</p> */}
+          {/* <p>{product?.rating?.count}</p> */}
+        </div>
+        <div>
+          <img
+            className={styles.detailsImage}
+            src={product?.image}
+            alt={product?.title}
+          />
+        </div>
       </div>
     </div>
   );
