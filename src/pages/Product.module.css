@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .productContainer {
-  background-color: #F9CF93;
+  background-color: #FBF3E4;
   margin: 0 auto;
   padding: 4rem 0;
   font-family: 'Open Sans', sans-serif;
@@ -43,9 +43,8 @@
 }
 
 .product:hover {
-  border: 8px inset #953e58;
+  border: 5px inset #953e58;
   opacity: 1;
-  padding: 5px;
 }
 
 .product>* {
